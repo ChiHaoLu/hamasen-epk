@@ -13,8 +13,8 @@ const VIDEOS = [
 const SOCIAL = [
   { platform: 'Instagram', handle: '@thehamasen', href: 'https://www.instagram.com/thehamasen/' },
   { platform: 'StreetVoice', handle: '@thehamasen', href: 'https://streetvoice.com/thehamasen/' },
+  { platform: 'YouTube', handle: '濱線 Hamasen', href: 'https://www.youtube.com/@thehamasen' },
   { platform: 'Spotify', handle: '濱線 Hamasen', href: '#' },
-  { platform: 'YouTube', handle: '濱線 Hamasen', href: '#' },
 ];
 
 function renderTracks(id) {

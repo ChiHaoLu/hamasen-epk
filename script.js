@@ -1,7 +1,7 @@
 const TRACKS = [
-  { num: '01', title: 'Escape',           meta: 'Demo · 2026', href: '#' },
+  { num: '01', title: 'Escape', meta: 'Demo · 2026', href: '#' },
   { num: '02', title: 'Cosmic Explosion', meta: 'Demo · 2026', href: '#' },
-  { num: '03', title: 'Hamasen',          meta: 'Demo · 2026', href: '#' },
+  { num: '03', title: 'Hamasen', meta: 'Demo · 2026', href: '#' },
 ];
 
 const VIDEOS = [
@@ -11,10 +11,10 @@ const VIDEOS = [
 ];
 
 const SOCIAL = [
-  { platform: 'Instagram',   handle: '@thehamasen',    href: 'https://www.instagram.com/thehamasen/' },
-  { platform: 'StreetVoice', handle: '@thehamasen',    href: 'https://streetvoice.com/thehamasen/' },
-  { platform: 'Spotify',     handle: 'Hamasen H.M.S',  href: '#' },
-  { platform: 'YouTube',     handle: '濱線 Hamasen',   href: '#' },
+  { platform: 'Instagram', handle: '@thehamasen', href: 'https://www.instagram.com/thehamasen/' },
+  { platform: 'StreetVoice', handle: '@thehamasen', href: 'https://streetvoice.com/thehamasen/' },
+  { platform: 'Spotify', handle: '濱線 Hamasen', href: '#' },
+  { platform: 'YouTube', handle: '濱線 Hamasen', href: '#' },
 ];
 
 function renderTracks(id) {
@@ -63,13 +63,13 @@ function setLang(lang) {
   ['zh', 'en', 'ja'].forEach(lang => {
     renderTracks('tracks-' + lang);
     renderVideos('videos-' + lang);
-    renderSocial('social-'  + lang);
+    renderSocial('social-' + lang);
   });
 
   const nav = (navigator.language || navigator.userLanguage || 'zh').toLowerCase();
   let lang = 'zh';
-  if (nav.startsWith('ja'))      lang = 'ja';
+  if (nav.startsWith('ja')) lang = 'ja';
   else if (nav.startsWith('zh')) lang = 'zh';
-  else                           lang = 'en';
+  else lang = 'en';
   setLang(lang);
 })();

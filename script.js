@@ -1,13 +1,13 @@
 const TRACKS = [
-  { num: '01', title: 'Escape', meta: 'Demo · 2026', href: '#' },
-  { num: '02', title: 'Cosmic Explosion', meta: 'Demo · 2026', href: '#' },
-  { num: '03', title: 'Hamasen', meta: 'Demo · 2026', href: '#' },
+  { num: '01', title: 'Hamasen', meta: 'Demo · 2026', href: '#' },
+  { num: '02', title: 'Escape', meta: 'Demo · 2026', href: '#' },
+  { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: '#' },
 ];
 
 const VIDEOS = [
-  { title: 'Performance Title Placeholder', meta: 'Venue · 2026', href: '#' },
-  { title: 'Performance Title Placeholder', meta: 'Venue · 2026', href: '#' },
-  { title: 'Performance Title Placeholder', meta: 'Venue · 2026', href: '#' },
+  { title: 'Drift Test Session', meta: 'Riff Bar · 2026', href: '#' },
+  { title: 'Coastal Trial Session', meta: 'Venue · 2026', href: '#' },
+  { title: 'Quiet Before Launch Session', meta: 'Venue · 2026', href: '#' }
 ];
 
 const SOCIAL = [
@@ -52,11 +52,52 @@ function renderSocial(id) {
     </a>`).join('');
 }
 
+const TOP_LABEL = { zh: '首頁', en: 'Top', ja: 'トップ' };
+let sectionObserver = null;
+
+function buildSideNav(lang) {
+  const nav = document.getElementById('side-nav');
+  const section = document.getElementById('lang-' + lang);
+  if (!nav || !section) return;
+
+  const hero = section.querySelector('.hero');
+  if (hero) hero.id = `top-${lang}`;
+
+  const sections = Array.from(section.querySelectorAll('section'));
+  sections.forEach((sec, i) => { sec.id = `sec-${lang}-${i}`; });
+
+  const items = [{ id: `top-${lang}`, label: TOP_LABEL[lang] || 'Top' }];
+  sections.forEach(sec => {
+    const labelEl = sec.querySelector('.section-label');
+    if (labelEl) items.push({ id: sec.id, label: labelEl.textContent.trim() });
+  });
+
+  nav.innerHTML = items.map(it => `
+    <a class="side-nav-item" href="#${it.id}" data-target="${it.id}">
+      <span class="side-nav-dot"></span>
+      <span class="side-nav-label">${it.label}</span>
+    </a>`).join('');
+
+  if (sectionObserver) sectionObserver.disconnect();
+  sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const id = entry.target.id;
+      nav.querySelectorAll('.side-nav-item').forEach(a => {
+        a.classList.toggle('active', a.dataset.target === id);
+      });
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+
+  [hero, ...sections].filter(Boolean).forEach(el => sectionObserver.observe(el));
+}
+
 function setLang(lang) {
   document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
   document.getElementById('lang-' + lang).classList.add('active');
   document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+  buildSideNav(lang);
 }
 
 (function init() {

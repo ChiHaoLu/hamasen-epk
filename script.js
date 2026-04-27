@@ -2,12 +2,14 @@ const TRACKS = [
   { num: '01', title: 'Hamasen', meta: 'Demo · 2026', href: '#' },
   { num: '02', title: 'Escape', meta: 'Demo · 2026', href: '#' },
   { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: '#' },
+  { num: '04', title: 'Lasting', meta: 'Demo · 2026', href: '#' },
+  { num: '05', title: 'Cosmic Explosion', meta: 'Demo · 2026', href: '#' },
 ];
 
 const VIDEOS = [
-  { title: 'Drift Test Session', meta: 'Riff Bar · 2026', href: '#' },
-  { title: 'Coastal Trial Session', meta: 'Venue · 2026', href: '#' },
-  { title: 'Quiet Before Launch Session', meta: 'Venue · 2026', href: '#' }
+  { title: 'Drift Test Session', meta: 'Riff Bar Taipei · 2026', href: '#' },
+  { title: 'TBD', meta: 'Venue · 2026', href: '#' },
+  { title: 'TBD', meta: 'Venue · 2026', href: '#' }
 ];
 
 const SOCIAL = [

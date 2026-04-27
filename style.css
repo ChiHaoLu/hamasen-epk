@@ -329,18 +329,6 @@ section {
 }
 
 /* Live */
-.live-note {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px;
-  font-style: italic;
-  color: var(--dusk);
-  border-left: 2px solid var(--dusk);
-  padding-left: 24px;
-  margin-bottom: 40px;
-  max-width: 600px;
-  line-height: 1.8;
-}
-
 .live-offers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -403,6 +391,49 @@ section {
   text-transform: uppercase;
   color: var(--tide);
   opacity: 0.7;
+}
+
+/* Tech Rider */
+.rider-intro {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--deep);
+  opacity: 0.85;
+  max-width: 720px;
+  margin-bottom: 32px;
+}
+
+.rider-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--mist);
+  border: 1px solid var(--mist);
+}
+
+.rider-block {
+  background: rgba(255, 255, 255, 0.45);
+  padding: 26px 24px;
+}
+
+.rider-block-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.rider-block-body {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--deep);
+}
+
+#lang-ja .rider-intro,
+#lang-ja .rider-block-body {
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* Contact */
@@ -568,7 +599,6 @@ footer {
 #lang-ja .hero-tagline,
 #lang-ja .about-text,
 #lang-ja .music-card-body,
-#lang-ja .live-note,
 #lang-ja .offer-body,
 #lang-ja .contact-line {
   font-family: 'Noto Sans JP', sans-serif;
@@ -595,6 +625,7 @@ footer {
   section { padding: 60px 32px; }
   .music-grid { grid-template-columns: 1fr; }
   .live-offers { grid-template-columns: 1fr; }
+  .rider-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero { flex-direction: column; align-items: stretch; gap: 40px; }
   .hero-photo { flex: 0 0 auto; max-width: 100%; }

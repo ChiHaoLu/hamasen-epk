@@ -7,7 +7,7 @@ const TRACKS = [
 ];
 
 const VIDEOS = [
-  { title: 'First Session (Planning)', meta: 'Revolver · 2026 June', href: '#' },
+  { title: 'First Session (Planning)', meta: 'Revolver · 2026 July', href: '#' },
   { title: 'Drift Test Session (Planning)', meta: 'Riff Bar Taipei · 2026 August', href: '#' },
   { title: 'Regular Session Somewhere (Planning)', meta: 'Venue · 2026 August', href: '#' }
 ];
@@ -16,7 +16,7 @@ const SOCIAL = [
   { platform: 'Instagram', handle: '@thehamasen', href: 'https://www.instagram.com/thehamasen/' },
   { platform: 'StreetVoice', handle: '@thehamasen', href: 'https://streetvoice.com/thehamasen/' },
   { platform: 'YouTube', handle: '濱線 Hamasen', href: 'https://www.youtube.com/@thehamasen' },
-  { platform: 'Spotify', handle: '濱線 Hamasen', href: '#' },
+  { platform: 'Spotify', handle: '濱線 Hamasen (Construting...)', href: '#' },
 ];
 
 function renderTracks(id) {

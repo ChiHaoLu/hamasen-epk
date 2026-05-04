@@ -7,9 +7,9 @@ const TRACKS = [
 ];
 
 const VIDEOS = [
-  { title: 'First Session (Planning)', meta: 'Revolver · 2026 July', href: '#' },
+  { title: 'First Session (Planning)', meta: 'Revolver · 2026 June', href: '#' },
   { title: 'Drift Test Session (Planning)', meta: 'Riff Bar Taipei · 2026 August', href: '#' },
-  { title: 'Regular Session Somewhere (Planning)', meta: 'Venue · 2026 August', href: '#' }
+  { title: 'Regular Session Somewhere (Planning)', meta: 'Venue · 2026 September', href: '#' }
 ];
 
 const SOCIAL = [

@@ -1,15 +1,16 @@
 const TRACKS = [
-  { num: '01', title: 'Hamasen', meta: 'Jamming · 2026', href: 'https://drive.google.com/file/d/1RCe3KepdEVyOqJRE-JZnSpYkW7CltA4u/view?usp=sharing' },
-  { num: '02', title: 'Escape', meta: 'Jamming · 2026', href: 'https://drive.google.com/file/d/1avisl84I_Ya1Lh-XqSUKRSXkdLs6AoMn/view?usp=sharing' },
-  { num: '03', title: 'Unsaid Night', meta: 'Jamming · 2026', href: 'https://drive.google.com/file/d/1lGH4PCE7JFY0xKlc9N8jfxzd2H2wktRP/view?usp=sharing' },
+  { num: '01', title: 'Hamasen', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1RCe3KepdEVyOqJRE-JZnSpYkW7CltA4u/view?usp=sharing' },
+  { num: '02', title: 'Escape', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1GNXYjDFkMU4G0yicFYhmrczsLGA5kuz2/view?usp=sharing' },
+  { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1lRTm2NPQ0H8vVfDQxRj1VoMCGCG1enKl/view?usp=sharing' },
   { num: '04', title: 'Lasting', meta: 'Writing · 2026', href: '#' },
   { num: '05', title: 'Cosmic Explosion', meta: 'Writing · 2026', href: '#' },
+  { num: '06', title: 'Hamasen Dusk', meta: 'Jamming · 2026', href: 'https://drive.google.com/file/d/1Lrjus9PR_dLqoZ-E1jwOmsAU5FE5iRRt/view?usp=sharing' },
 ];
 
 const VIDEOS = [
-  { title: 'First Session (Planning)', meta: 'Revolver · 2026 June', href: '#' },
-  { title: 'Drift Test Session (Planning)', meta: 'Riff Bar Taipei · 2026 August', href: '#' },
-  { title: 'Regular Session Somewhere (Planning)', meta: 'Venue · 2026 September', href: '#' }
+  { title: 'Drift Test Session (Planning)', meta: 'Riff Bar Taipei · 2026 July', href: '#' },
+  { title: 'Partner Session (Planning)', meta: 'Revolver · 2026 September', href: '#' },
+  { title: 'X\'mas Session (Planning)', meta: 'Venue · 2026 December', href: '#' },
 ];
 
 const SOCIAL = [

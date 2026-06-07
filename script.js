@@ -1,9 +1,5 @@
 const TRACKS = [
   { num: '01', title: 'Escape', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/863198/' },
-  { num: '02', title: 'Hamasen', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1RCe3KepdEVyOqJRE-JZnSpYkW7CltA4u/view?usp=sharing' },
-  { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1lRTm2NPQ0H8vVfDQxRj1VoMCGCG1enKl/view?usp=sharing' },
-  { num: '04', title: 'Lasting', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1w-PsthQfkBrCdaLNFCK_tS1EwrKfS8Tu/view?usp=drive_link' },
-  { num: '05', title: 'Cosmic Explosion', meta: 'Demo · 2026', href: '#' },
 ];
 
 const VIDEOS = [
@@ -17,6 +13,7 @@ const SOCIAL = [
   { platform: 'StreetVoice', handle: '@thehamasen', href: 'https://streetvoice.com/thehamasen/' },
   { platform: 'YouTube', handle: '濱線 Hamasen', href: 'https://www.youtube.com/@thehamasen' },
   { platform: 'Spotify', handle: '濱線 Hamasen (Construting...)', href: '#' },
+  { platform: 'Eggs（エッグス）', handle: '@thehamasen', href: 'https://eggs.mu/artist/thehamasen' },
 ];
 
 function renderTracks(id) {

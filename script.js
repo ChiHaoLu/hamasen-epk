@@ -1,10 +1,9 @@
 const TRACKS = [
-  { num: '01', title: 'Hamasen', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1RCe3KepdEVyOqJRE-JZnSpYkW7CltA4u/view?usp=sharing' },
-  { num: '02', title: 'Escape', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1GNXYjDFkMU4G0yicFYhmrczsLGA5kuz2/view?usp=sharing' },
+  { num: '01', title: 'Escape', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/863198/' },
+  { num: '02', title: 'Hamasen', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1RCe3KepdEVyOqJRE-JZnSpYkW7CltA4u/view?usp=sharing' },
   { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1lRTm2NPQ0H8vVfDQxRj1VoMCGCG1enKl/view?usp=sharing' },
   { num: '04', title: 'Lasting', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1w-PsthQfkBrCdaLNFCK_tS1EwrKfS8Tu/view?usp=drive_link' },
-  { num: '05', title: 'Cosmic Explosion', meta: 'Writing · 2026', href: '#' },
-  { num: '06', title: 'Hamasen Dusk', meta: 'Jamming · 2026', href: 'https://drive.google.com/file/d/1Lrjus9PR_dLqoZ-E1jwOmsAU5FE5iRRt/view?usp=sharing' },
+  { num: '05', title: 'Cosmic Explosion', meta: 'Demo · 2026', href: '#' },
 ];
 
 const VIDEOS = [

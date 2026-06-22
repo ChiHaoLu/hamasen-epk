@@ -1,5 +1,8 @@
 const TRACKS = [
   { num: '01', title: 'Escape', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/863198/' },
+  { num: '02', title: 'Hamasen', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1HJSiUnER0Ch9KtLkZa2Yew11BHrljzi8/view?usp=drive_link' },
+  { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1FhM5x8-SVpdBE0ruuGs8TmuGjqeCy76v/view?usp=drive_link' },
+  { num: '04', title: 'Lasting', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/13lhcFZG_fVMvHYwMMUfOI946b778DjpS/view?usp=sharing' },
 ];
 
 const VIDEOS = [

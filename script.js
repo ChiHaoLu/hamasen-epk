@@ -4,12 +4,14 @@ const TRACKS = [
   { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1FhM5x8-SVpdBE0ruuGs8TmuGjqeCy76v/view?usp=drive_link' },
   { num: '04', title: '你在', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/868709/' },
   { num: '05', title: 'Lasting', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/13lhcFZG_fVMvHYwMMUfOI946b778DjpS/view?usp=sharing' },
+  { num: '06', title: 'Cosmic Explosion', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1osFua__-o_4zc_fzwe8SratjS5y0qH3u/view?usp=sharing' },
+  { num: '07', title: 'Hamasen Dusk', meta: 'Demo · 2026', href: '' },
 ];
 
 const VIDEOS = [
-  { title: 'Drift Test Session (Planning)', meta: 'Riff Bar Taipei · 2026 July', href: '#' },
-  { title: 'Partner Session (Planning)', meta: 'Revolver · 2026 September', href: '#' },
-  { title: 'X\'mas Session (Planning)', meta: 'Venue · 2026 December', href: '#' },
+  { title: 'Drift Test Session (Planning)', meta: 'TBD · 2026 TBD', href: '#' },
+  { title: 'Drift Test Session (Planning)', meta: 'TBD · 2026 TBD', href: '#' },
+  { title: 'Drift Test Session (Planning)', meta: 'TBD · 2026 TBD', href: '#' },
 ];
 
 const SOCIAL = [

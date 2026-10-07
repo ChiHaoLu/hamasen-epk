@@ -4,11 +4,11 @@ const TRACKS = [
   { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/870221/' },
   { num: '04', title: '你在', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/868709/' },
   { num: '05', title: 'Lasting', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/881137/' },
-  { num: '06', title: 'Cosmic Explosion', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1osFua__-o_4zc_fzwe8SratjS5y0qH3u/view?usp=sharing' },
-  { num: '07', title: 'Hamasen Dusk', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1lCzahPQTqJRrFMhZ3Kh6kb6Ci7VSiW1z/view?usp=sharing' },
-  { num: '08', title: 'Killifish', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1QQuimKjAIqozZP00CHGx0TdRy-Zg34OI/view?usp=drive_link' },
-  { num: '09', title: 'TBD', meta: 'Demo · 2026', href: '' },
-  { num: '10', title: 'TBD', meta: 'Demo · 2026', href: '' },
+  { num: '06', title: 'Cosmic Explosion', meta: 'Writing · 2026', href: 'https://drive.google.com/file/d/1osFua__-o_4zc_fzwe8SratjS5y0qH3u/view?usp=sharing' },
+  { num: '07', title: 'Hamasen Dusk', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1bIVgis7eAlJFHue6tL1Jdcwihcta7MUl/view?usp=sharing' },
+  { num: '09', title: 'Life', meta: 'Writing · 2026', href: 'https://drive.google.com/file/d/1AOm0ANfxD8TqB-ynsOFXwRGrTQHffEkE/view?usp=drive_link' },
+  { num: '08', title: '繪馬', meta: 'Writing · 2026', href: 'https://drive.google.com/file/d/1j3eSWa1__FwC13Ybmhj0NR0PGvBOxnxf/view?usp=drive_link' },
+  { num: '10', title: 'Killifish', meta: 'Writing · 2026', href: 'https://drive.google.com/file/d/1QQuimKjAIqozZP00CHGx0TdRy-Zg34OI/view?usp=drive_link' },
 ];
 
 const VIDEOS = [

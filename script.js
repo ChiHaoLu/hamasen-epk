@@ -1,17 +1,34 @@
 const TRACKS = [
   { num: '01', title: 'Escape', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/863198/' },
   { num: '02', title: 'Hamasen', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1HJSiUnER0Ch9KtLkZa2Yew11BHrljzi8/view?usp=drive_link' },
-  { num: '03', title: 'Unsaid Night', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/870221/' },
-  { num: '04', title: '你在', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/868709/' },
-  { num: '05', title: 'Lasting', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/881137/' },
-  { num: '06', title: 'Cosmic Explosion', meta: 'Writing · 2026', href: 'https://drive.google.com/file/d/1osFua__-o_4zc_fzwe8SratjS5y0qH3u/view?usp=sharing' },
-  { num: '07', title: 'Hamasen Dusk', meta: 'Demo · 2026', href: 'https://drive.google.com/file/d/1bIVgis7eAlJFHue6tL1Jdcwihcta7MUl/view?usp=sharing' },
+  { num: '03', title: 'Lasting', meta: 'Demo · 2026', href: 'https://streetvoice.com/thehamasen/songs/881137/' },
 ];
 
 const VIDEOS = [
   { title: 'Drift Test Session (Planning)', meta: 'TBD · 2026 TBD', href: '#' },
-  { title: 'Drift Test Session (Planning)', meta: 'TBD · 2026 TBD', href: '#' },
-  { title: 'Drift Test Session (Planning)', meta: 'TBD · 2026 TBD', href: '#' },
+];
+
+const ASSETS = [
+  {
+    file: 'og-cover.jpg',
+    name: { zh: '團照', en: 'Band Photo', ja: 'バンド写真' },
+    meta: 'JPG · 1567×1045 · 420 KB',
+  },
+  {
+    file: 'happy-cover.jpg',
+    name: { zh: '專輯封面', en: 'Cover Art', ja: 'カバーアート' },
+    meta: 'JPG · 1567×1045 · 388 KB',
+  },
+  {
+    file: 'logo-transparent.png',
+    name: { zh: 'Logo（透明背景）', en: 'Logo (Transparent)', ja: 'ロゴ（透過）' },
+    meta: 'PNG · 842×842 · 211 KB',
+  },
+  {
+    file: 'logo.jpg',
+    name: { zh: 'Logo', en: 'Logo', ja: 'ロゴ' },
+    meta: 'JPG · 842×842 · 59 KB',
+  },
 ];
 
 const SOCIAL = [
@@ -45,6 +62,26 @@ function renderVideos(id) {
         <div class="video-meta">${v.meta}</div>
       </div>
       <span class="list-arrow">→</span>
+    </a>`).join('');
+}
+
+const ASSET_HINT = {
+  zh: '點擊卡片下載原始檔案',
+  en: 'Click a card to download the original file',
+  ja: 'カードをクリックして原本をダウンロード',
+};
+
+function renderAssets(lang) {
+  const el = document.getElementById('assets-' + lang);
+  if (!el) return;
+  el.innerHTML = ASSETS.map(a => `
+    <a class="asset-card" href="${a.file}" download>
+      <div class="asset-thumb"><img src="${a.file}" alt="${a.name[lang]}" loading="lazy"></div>
+      <div class="asset-info">
+        <div class="asset-name">${a.name[lang]}</div>
+        <div class="asset-meta">${a.meta}</div>
+      </div>
+      <span class="asset-download">↓</span>
     </a>`).join('');
 }
 
@@ -109,6 +146,7 @@ function setLang(lang) {
   ['zh', 'en', 'ja'].forEach(lang => {
     renderTracks('tracks-' + lang);
     renderVideos('videos-' + lang);
+    renderAssets(lang);
     renderSocial('social-' + lang);
   });
 

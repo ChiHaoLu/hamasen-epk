@@ -5,7 +5,8 @@ const TRACKS = [
 ];
 
 const VIDEOS = [
-  { title: 'Drift Test Session (Planning)', meta: 'TBD · 2026 TBD', href: '#' },
+  { title: 'Sweet & Salty Marshmallow (Scheduled)', meta: 'Revolver · 2027 January', href: '#' },
+  { title: 'Drift Test Session (Planning)', meta: 'Riff Bar Taipei · 2026 December', href: '#' },
 ];
 
 const ASSETS = [
